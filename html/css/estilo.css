@@ -1,0 +1,12 @@
+.div-setas {
+	width:250px;
+	margin: auto;
+}
+
+.texto-seta {
+	font-size: 30px;
+}
+
+#id-log-comandos {
+	height: auto !important; /* !important is used to force override. */
+}

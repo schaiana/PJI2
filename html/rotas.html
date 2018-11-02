@@ -1,0 +1,67 @@
+<div data-role="page" id="id-rotas">
+
+   <header data-role="header" id="id-header" data-position="fixed" >
+        <!--
+        <a href="novo.html" data-icon="add" class="ui-btn-left">Novo</a>
+        <a href="editar.html" data-icon="add" class="ui-btn-right">Editar</a>
+         -->
+        <h1>Lista de Rotas Cadastradas</h1>
+    </header>
+   
+    
+    <div data-role="navbar">
+        <ul>
+			<li><a href="novo.html">Nova Rota</a></li>
+            <li><a href="editar.html">Editar Rota</a></li>
+            <li><a href="excluir.html">Excluir Rota</a></li>
+			<li><a href="cadastro.html">Cadastrar Usuário</a></li>
+			<li><a id="id-logoff" href="javascript:void(0);">Logoff</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+    
+    <div data-role="content">
+        <table class="ui-responsive table-stroke table-stripe" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME DA ROTA</th>
+                    <th>PONTOS DE PARADA</th>
+					<th>HORA</th>
+					<th>MINUTO</th>
+					<th>HABILITADA</th>
+                </tr>
+            </thead>
+            <tbody id="id-lista-rotas">
+            </tbody>
+        </table>
+    </div>
+	<div style="width: 800px">
+		<div class="ui-grid-a">
+		  <div class="ui-block-a">
+			 <div class="div-setas">
+				<div class="ui-grid-b">
+				  <div class="ui-block-a"></div>
+				  <div class="ui-block-b"><button id="bt-frente"><span class="texto-seta">&uarr;</span></button></div>
+				  <div class="ui-block-c"></div>
+				</div>
+			</div>
+			<div class="div-setas">
+				<div class="ui-grid-b">
+				  <div class="ui-block-a"><button id="bt-esquerda"><span class="texto-seta">&larr;</span></button></div>
+				  <div class="ui-block-b"><button id="bt-tras"><span class="texto-seta">&darr;</span></button></div>
+				  <div class="ui-block-c"><button id="bt-direita"><span class="texto-seta">&rarr;</span></button></div>
+				</div>
+			</div>
+		  </div>
+		  <div class="ui-block-b"><button id="bt-frente"><textarea id="id-log-comandos" rows="7" cols="10"></textarea> </div>
+		</div>
+	</div>
+    
+
+    <footer data-role="footer" data-position="fixed">
+            &copy; 2017 IFSC
+    </footer>
+
+</div>
+
